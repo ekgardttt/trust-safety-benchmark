@@ -5,3 +5,8 @@ olist_db.db
 __pycache__/
 *.pyc
 .DS_Store
+olist_orders_dataset.csv
+olist_order_items_dataset.csv
+olist_order_payments_dataset.csv
+trust_safety_project.zip
+trust_safety_project/
