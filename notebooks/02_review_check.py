@@ -24,7 +24,7 @@ for fname in flagged_files:
         entity_ids.update(df["entity_id"].astype(str).tolist())
 
 entity_ids = list(entity_ids)
-print(f"Проверяем отзывы для {len(entity_ids)} flagged продавцов\n")
+print(f"Проверяем отзывы для {len(entity_ids)} подозрительных продавцов\n")
 
 conn = sqlite3.connect(str(db_path))
 placeholders = ",".join(["?"] * len(entity_ids))

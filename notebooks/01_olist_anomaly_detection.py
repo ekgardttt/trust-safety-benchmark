@@ -13,7 +13,7 @@ report_dir.mkdir(exist_ok=True)
 conn = sqlite3.connect(str(db_path))
 cursor = conn.cursor()
 
-print("Считаем фичи по продавцам прямо в SQL - это быстрее, чем тащить сырые заказы в pandas")
+print("Считаем фичи по продавцам ")
 print()
 
 seller_features_query = """

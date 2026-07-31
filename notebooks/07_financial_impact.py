@@ -41,14 +41,14 @@ for threshold in [2, 3, 5, 10]:
         "pct_of_total_fraud_revenue": revenue / total_fraud_revenue,
     })
     print(f"Порог блокировки: {threshold} аккаунтов на устройство")
-    print(f"  Предотвратимых fraud-транзакций: {count}")
-    print(f"  Предотвратимая выручка: {revenue:,.2f} ({revenue/total_fraud_revenue:.2%} от всей fraud-выручки)")
+    print(f"  Предотвратимых мошеннических транзакций: {count}")
+    print(f"  Предотвратимая выручка: {revenue:,.2f} ({revenue/total_fraud_revenue:.2%} от всей мошеннической выручки)")
     print()
 
 results_df = pd.DataFrame(results)
 results_df.to_csv(report_dir / "financial_impact_by_threshold.csv", index=False)
 
-print("=== Вывод ===")
+print(" Вывод ")
 fastest = results_df.iloc[0]["preventable_fraud_revenue"]
 slowest = results_df.iloc[-1]["preventable_fraud_revenue"]
 print(f"Разница между порогом 2 и порогом 10 аккаунтов: {fastest - slowest:,.2f} в выручке")

@@ -14,12 +14,12 @@ report_dir.mkdir(exist_ok=True)
 
 
 def run_company(name, unified, min_events=3):
-    print(f"\n=== {name} ===")
-    print(f"Событий: {len(unified)}, уникальных entity: {unified['entity_id'].nunique()}")
+    print(f"\n {name} ")
+    print(f"Событий: {len(unified)}, уникальных клиентов: {unified['entity_id'].nunique()}")
 
     feats = build_entity_features(unified)
     feats = feats[feats["n_events"] >= min_events].reset_index(drop=True)
-    print(f"Entity с >={min_events} событиями: {len(feats)}")
+    print(f"Клиентов с >={min_events} событиями: {len(feats)}")
 
     X = select_model_features(feats)
     model = IsolationForest(n_estimators=200, contamination=0.03, random_state=42)
