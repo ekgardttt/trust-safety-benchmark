@@ -1,0 +1,4 @@
+entity_id,n_events,n_unique_customers,first_event_ts,last_event_ts,lifetime_days,events_per_day,days_since_first_event,pct_events_in_first_14d,top3_customer_concentration,cancellation_rate,total_amount,avg_amount,amount_std,source,log_n_events,log_avg_amount,log_amount_std,rule_flag_single_customer_all_cancelled
+37ceb404da208418c9032f0674e57804,3,1,2018-05-22 18:50:55,2018-05-22 18:50:55,1.0,3.0,103.5944675925926,1.0,1.0,1.0,204.93,68.31,0.0,olist_brazil,1.3862943611198906,4.238589195929893,0.0,True
+66d5ae34537110d3affc56174dad2b2f,3,1,2018-07-08 18:44:18,2018-07-08 18:44:18,1.0,3.0,56.5990625,1.0,1.0,1.0,33.81,11.270000000000001,0.0,olist_brazil,1.3862943611198906,2.5071572587228204,0.0,True
+bcf5566870987da7bc811fbc8c5b9fd9,4,1,2017-08-10 09:31:59,2017-08-10 09:31:59,1.0,4.0,388.98261574074075,1.0,1.0,1.0,96.0,24.0,0.0,olist_brazil,1.6094379124341003,3.2188758248682006,0.0,True
